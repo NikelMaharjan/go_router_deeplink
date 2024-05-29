@@ -17,36 +17,36 @@ part 'typed_routes.g.dart';
 
 @TypedGoRoute<DetailPageRoute>(
     path: DetailsPage.route,
-  routes: [
-    TypedGoRoute<NewsPageRoute>(
-      path: NewsPage.route,
-    ),
-    TypedGoRoute<BlogsPageRoute>(
-      path: BlogsPage.route,
-    ),
-    TypedGoRoute<LoginPageRoute>(
-      path: LoginPage.route,
-    ),
-    TypedGoRoute<ProfilePageRoute>(
-      path: ProfilePage.route,
-    ),
-    TypedGoRoute<ReferCodePageRoute>(
-      path: ReferPage.route,
-    ),
-    TypedGoRoute<BlogsPageRoute>(
-      path: BlogsPage.route,
-    ),
-    TypedGoRoute<Page1Route>(
-      path: Page1.route,
-      routes: [
-        TypedGoRoute<Page2Route>(
-          path: Page2.route,
-        ),
+    routes: [
+      TypedGoRoute<NewsPageRoute>(
+        path: NewsPage.route,
+      ),
+      TypedGoRoute<BlogsPageRoute>(
+        path: BlogsPage.route,
+      ),
+      TypedGoRoute<LoginPageRoute>(
+        path: LoginPage.route,
+      ),
+      TypedGoRoute<ProfilePageRoute>(
+        path: ProfilePage.route,
+      ),
+      TypedGoRoute<ReferCodePageRoute>(
+        path: ReferPage.route,
+      ),
+      TypedGoRoute<BlogsPageRoute>(
+        path: BlogsPage.route,
+      ),
+      TypedGoRoute<Page1Route>(
+          path: Page1.route,
+          routes: [
+            TypedGoRoute<Page2Route>(
+              path: Page2.route,
+            ),
 
-      ]
-    ),
+          ]
+      ),
 
-  ]
+    ]
 )
 class DetailPageRoute extends GoRouteData {
 
@@ -152,5 +152,4 @@ class Page2Route extends GoRouteData {
     return const Page2();
   }
 }
-
 

@@ -5,6 +5,7 @@ class DatabaseRepository {
   static const String _boxName = "LocalStorage";
   static const String _tokenKey="tokenKey";
 
+  //singleton method.. . It ensures a class only has one instance, and provides a global point of access to it.
   static final  _instance=DatabaseRepository._();
 
   late final Box _hiveBox;
